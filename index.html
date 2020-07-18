@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles/style.css" type="text/css" />
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+      <title>Testing Area</title>
+   </head>
+   <body>
+      <nav class="nav">
+         <span class="nav__logo">CJCON90</span>
+         <ul class="nav__list">
+            <li class="nav__list--item"><a href="#" class="nav__list--link">Hover</a></li>
+            <li class="nav__list--item"><a href="#" class="nav__list--link">Over</a></li>
+            <li class="nav__list--item"><a href="#" class="nav__list--link">This</a></li>
+            <li class="nav__list--item"><a href="#" class="nav__list--link">Text</a></li>
+         </ul>
+      </nav>
+      <header class="header">
+         <div class="header__heading">
+            <h1 class="header__heading--text move-left">CSS</h1>
+            <h1 class="header__heading--text move-right">Tricks</h1>
+            <h3 class="header__heading--subtext move-bottom">For Web Dev Study Buddies</h3>
+         </div>
+      </header>
+      <main class="content">
+         <div class="content__container">
+            <div class="content__info">
+               <h2 class="content__info--heading">Buttons</h2>
+               <ul class="content__list">
+                  <li class="content__list--item"><code>:hover</code> pseudo element with <code>transform: translateY</code> to raise button on mouseover</li>
+                  <li class="content__list--item"><code>box-shadow</code> to create feeling of depth when raised</li>
+                  <li class="content__list--item">reduce <code>transform: translateY</code> and reduce <code>box-shadow:</code> when pressed</li>
+                  <li class="content__list--item"><code>::after</code> element with 100% width & height and lower <code>z-index</code> hidden behind button</li>
+                  <li class="content__list--item">
+                     use <code>transform: scale</code> & <code>opacity: 0</code> on <code>::after</code> element when hovered to make it <strong>grow</strong> then <em>disappear</em>!
+                  </li>
+               </ul>
+            </div>
+            <div class="content__showcase">
+               <div class="content__showcase--div">
+                  <a href="#" class="btn btn--secondary">Hover me!</a>
+               </div>
+               <div class="content__showcase--div">
+                  <a href="#" class="btn btn--primary" id="btn--primary">and press me!</a>
+               </div>
+            </div>
+         </div>
+         <div class="content__container">
+            <div class="content__info">
+               <h2 class="content__info--heading">Gradient Text</h2>
+               <ul class="content__list">
+                  <li class="content__list--item">Set <code>background-image: linear-gradient(to right, color1, color2);</code> on text element</li>
+                  <li class="content__list--item">add <code>-webkit-background-clip: text;</code> which will clip the gradient background to match the text element</li>
+                  <li class="content__list--item">add <code>color: transparent;</code> to make the background gradient shine through!</li>
+                  <li class="content__list--item">The additional funkiness over yonder was done by adding <code>transform: skewY(1.5deg) skewX(10deg) scale(1.1);</code> on text when hovered</li>
+                  <li class="content__list--item">Also used <code>text-shadow</code> to again give a feeling of depth</li>
+               </ul>
+            </div>
+            <div class="content__showcase">
+               <h2 class="gradient--text">Ooooh, Funky!</h2>
+            </div>
+         </div>
+         <div class="content__container">
+            <div class="content__info">
+               <h2 class="content__info--heading">Nav Hover Effect</h2>
+               <ul class="content__list">
+                  <li class="content__list--item">Add default styling under pseudo elements <code>:link, :hover</code></li>
+                  <li class="content__list--item">Give default style a <code>background-image: linear-gradient(120deg, transparent 0%, transparent 50%, COLOR 50%);</code></li>
+                  <li class="content__list--item">Then to hide the background color, use <code>background-size: 250%;</code> (play around with % to get right size for your particular case)</li>
+                  <li class="content__list--item">Then on <code>:hover</code> reset to <code>background-position: 100%;</code></li>
+                  <li class="content__list--item">Remember to use <code>transition:</code> on default text to make it smooth!</li>
+               </ul>
+            </div>
+            <div class="content__showcase">
+               <div class="hover">
+                  <a href="#" class="hover--text">Hover over me!</a>
+               </div>
+            </div>
+         </div>
+      </main>
+   </body>
+</html>

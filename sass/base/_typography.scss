@@ -1,0 +1,54 @@
+code {
+   color: $color-white;
+   background-color: $color-secondary;
+   padding: 0 0.5rem;
+}
+
+.gradient--text {
+   font-size: 5rem;
+   text-transform: uppercase;
+   font-weight: 700;
+   display: inline-block;
+   background-image: linear-gradient(to right, $color-primary, $color-secondary);
+   -webkit-background-clip: text;
+   color: transparent;
+   letter-spacing: 0.2rem;
+   transition: all 0.2s;
+   text-align: center;
+
+   &:hover {
+      transform: skewY(1.5deg) skewX(10deg) scale(1.1);
+      text-shadow: 0.5rem 1rem 2rem rgba(black, 0.2);
+   }
+}
+
+.hover {
+   display: block;
+   width: 100%;
+   background-color: $color-primary;
+   text-align: center;
+   padding: 1.5rem;
+   &--text {
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 0.5rem;
+      font-size: 2.5rem;
+      color: $color-white;
+
+      &:link,
+      &:visited {
+         color: $color-white;
+         background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-secondary 50%);
+         background-size: 225%;
+         transition: all 0.5s;
+         z-index: 1000;
+      }
+
+      &:hover,
+      &:active {
+         background-position: 100%;
+         color: $color-white;
+         transform: translateX(1rem);
+      }
+   }
+}
