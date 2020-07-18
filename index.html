@@ -79,6 +79,27 @@
                </div>
             </div>
          </div>
+
+         <div class="content__container">
+            <div class="content__info">
+               <h2 class="content__info--heading">Form: Placeholders</h2>
+               <ul class="content__list">
+                  <li class="content__list--item">
+                     add <code>border-bottom: green;</code> for <code>:focus</code> and a red bottom border for <code>:focus:invalid</code> for basic HTML form validation
+                  </li>
+                  <li class="content__list--item">Put your input <em>before</em> your label in HTML and use <code>display: block;</code> on text input to make sure label appears underneath input</li>
+                  <li class="content__list--item">Use <code>input:placeholder-shown + label</code> as selector and add <code>opacity: 0; visibility: hidden;</code> on label</li>
+                  <li class="content__list--item">The <code>+</code> sign selects the element immediately after the previous element, so when a placeholder is shown the label will not be visible</li>
+                  <li class="content__list--item">Also use <code>transform: translateY()</code> to create animation effect when label appears (don't forget <code>transition</code>!)</li>
+               </ul>
+            </div>
+            <div class="content__showcase">
+               <div class="form">
+                  <input type="email" class="form__input" placeholder="Email address" id="email" required />
+                  <label for="email" class="form__label">Email address</label>
+               </div>
+            </div>
+         </div>
       </main>
    </body>
 </html>
